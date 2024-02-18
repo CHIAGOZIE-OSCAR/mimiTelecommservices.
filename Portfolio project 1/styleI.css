@@ -1,0 +1,1148 @@
+:root {
+  --white-color: #f2f5f9;
+  --orange-color: #ff9c1a;
+  --red-color: #ec1b09;
+  --gray-color: #f2f7fc;
+  --dark-gray-color: #e1e8ef;
+  --dark-color: #000;
+  --light-gray-color: #ebf2fa;
+  --light-pale-peach: #ffebd1;
+
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-tertiary: "Pacifico", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--white-color);
+  margin: 0;
+}
+
+header.desktop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem 3rem 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white-color);
+  z-index: 10;
+  border-bottom: 2px solid #ff9c1a;
+}
+
+header.desktop-header .logo {
+  font-size: 1.8rem;
+  font-family: var(--ff-tertiary);
+}
+
+header.desktop-header .logo span {
+  color: var(--orange-color)
+}
+
+header.mobile-header {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 3.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rem 8rem 0 8rem;
+}
+
+.split .profile-pics img {
+  width: 30rem;
+  height: 30rem;
+}
+
+.split .profile-pics h1 {
+  margin-left: 4rem;
+}
+
+.split .profile-pics p {
+  margin-left: 5.5rem;
+  font-weight: bold;
+}
+
+.split .access {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--orange-color);
+  margin-top: -10rem;
+}
+
+.split .pic-pic img {
+  width: 30rem;
+  height: 30rem;
+  margin-top: -7rem;
+}
+
+.about-me {
+  border-radius: 1.25rem;
+  background-color: #fff;
+  margin: 3rem 10rem 0 10rem;
+  width: 75rem;
+  padding-bottom: 1rem;
+}
+
+.about-me .h-dash {
+  display: flex;
+  gap: 2.12rem;
+}
+
+.about-me h2 {
+  color: #0B0909;
+  font-family: var(--ff-secondary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 4.59rem;
+  margin-top: 1.78rem;
+}
+
+
+.about-me .h-dash .dash {
+  height: 0.19rem;
+  width: 15.75rem;
+  background: var(--orange-color);
+  margin-right: 15.75rem;
+  margin-top: 3.48rem;
+}
+
+.about-me p.hello-there {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.87rem;
+  margin-left: 5.06rem;
+  margin-right: 8.7rem;
+  margin-top: -1.5rem;
+}
+
+.about-me h3 {
+  color: var(--dark-color);
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 7.06rem;
+  margin-bottom: 1.7rem;
+}
+
+.about-me .jobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.87rem;
+  margin-left: 10.06rem;
+  margin-right: 8.7rem;
+
+}
+
+.about-me .jobs .network-sub,
+.about-me .jobs .customer-sales {
+  background: var(--light-pale-peach);
+  border-radius: 1.25rem;
+  width: 20.81rem;
+}
+
+.about-me .jobs .network-sub h4,
+.about-me .jobs .customer-sales h4,
+.about-me .jobs .utility-cable h4,
+.about-me .jobs .electrical-tech h4 {
+  color: var(--dark-color);
+  font-family: var(--ff-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 0.68rem;
+  margin-top: 0.87rem;
+  text-align: center;
+}
+
+.about-me .jobs .network-sub p,
+.about-me .jobs .customer-sales p,
+.about-me .jobs .utility-cable p,
+.about-me .jobs .electrical-tech p {
+  color: var(--dark-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin-bottom: 0.81rem;
+  margin-left: 1.56rem;
+  margin-right: 1.56rem;
+  text-align: center;
+}
+
+.about-me .jobs .utility-cable,
+.about-me .jobs .electrical-tech {
+  background: var(--gray-color);
+  border-radius: 1.25rem;
+  width: 20.81rem;
+  position: relative;
+}
+
+.testimonials {
+  background-color: lightgreen;
+  width: 96rem;
+  margin: 5rem 1rem -1rem 1rem;
+  padding-bottom: 3rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.7rem;
+}
+
+.testimonials .testimony {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.testimonials .testimony .first-testimony,
+.testimonials .testimony .second-testimony,
+.testimonials .testimony .third-testimony {
+  width: 70rem;
+  border-radius: 1rem;
+  border: 0.2rem solid black;
+  margin: 1rem;
+  padding: 0.7rem;
+}
+
+.testimonials .testimony .first-testimony h4,
+.testimonials .testimony .second-testimony h4,
+.testimonials .testimony .third-testimony h4 {
+  text-align: center;
+}
+
+.testimonials .testimony .first-testimony p,
+.testimonials .testimony .second-testimony p,
+.testimonials .testimony .third-testimony p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+footer .footer-content p.all-rights a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content .developer-desktop {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .footer-content .developer-desktop img {
+  width: 7rem;
+  height: 7rem;
+}
+
+footer .footer-content p.mail a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content .developer-mail {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+    color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .split {
+    display: block;
+    padding: 8rem 2rem 0 2rem;
+  }
+
+  .split .profile-pics {
+    margin-bottom: 15rem;
+  }  
+
+  .split .profile-pics img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  
+  .split .profile-pics h1 {
+    margin-left: 1rem;
+    margin-top: 0rem;
+    font-size: 1.2rem;
+  }
+  
+  .split .profile-pics p {
+    margin: -0.5rem 0 0 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  .split .access {
+    transform: rotate(90deg);
+    margin: 0 0 10rem 0;
+  }
+
+  .split .pic-pic img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .about-me {
+    margin: 3rem 0 0 0;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .about-me .h-dash {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-me h2 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1.78rem;
+  }
+  
+  
+  .about-me .h-dash .dash {
+    height: 0.19rem;
+    width: 7rem;
+    background: var(--orange-color);
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
+
+  .about-me p.hello-there {
+    margin-top: -1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-me h3 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .about-me .jobs {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 2rem;
+  
+  }
+
+  .about-me .jobs .network-sub h4,
+  .about-me .jobs .customer-sales h4,
+  .about-me .jobs .utility-cable h4,
+  .about-me .jobs .electrical-tech h4 {
+    padding-top: 0.87rem;
+  }
+
+  .about-me .jobs .network-sub,
+  .about-me .jobs .customer-sales,
+  .about-me .jobs .utility-cable,
+  .about-me .jobs .electrical-tech {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+
+  .about-me .jobs .network-sub p,
+  .about-me .jobs .customer-sales p,
+  .about-me .jobs .utility-cable p,
+  .about-me .jobs .electrical-tech p {
+    padding-bottom: 2rem;
+  }
+
+
+  .testimonials {
+    background-color: lightgreen;
+    width: 100%;
+    margin: 5rem 0 -1rem 0rem;
+    padding-bottom: 3rem;
+  }
+
+  .testimonials .testimony {
+    display: block;
+  }
+  
+  .testimonials .testimony .first-testimony {
+    width: 90%;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin: 3rem 1rem 6rem 1rem;
+    padding: 0.8rem;
+  }
+
+  .testimonials .testimony .second-testimony {
+    width: 90%;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin: 6rem 1rem;
+    padding: 0.8rem;
+  }
+
+  .testimonials .testimony .third-testimony {
+    width: 90%;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin: 6rem 1rem 1rem 1rem;
+    padding: 0.8rem;
+  }
+  
+  .testimonials .testimony .first-testimony h4,
+  .testimonials .testimony .second-testimony h4,
+  .testimonials .testimony .third-testimony h4 {
+    text-align: center;
+  }
+  
+  .testimonials .testimony .first-testimony p,
+  .testimonials .testimony .second-testimony p,
+  .testimonials .testimony .third-testimony p {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  
+  footer .footer-content {
+    display: block;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer .footer-content p.all-rights {
+    margin-bottom: 3rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+  color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .split {
+    display: block;
+    padding: 8rem 4rem 0 4rem;
+  }
+
+  .split .profile-pics {
+    margin-bottom: 15rem;
+  }  
+
+  .split .profile-pics img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  
+  .split .profile-pics h1 {
+    margin-left: 1rem;
+    margin-top: 0rem;
+    font-size: 1.2rem;
+  }
+  
+  .split .profile-pics p {
+    margin: -0.5rem 0 0 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  .split .access {
+    transform: rotate(90deg);
+    margin: 0 0 10rem 0;
+  }
+
+  .split .pic-pic img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .about-me {
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  .about-me .h-dash {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  }
+  
+  .about-me h2 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1.78rem;
+  }
+  
+  
+  .about-me .h-dash .dash {
+    height: 0.19rem;
+    width: 7rem;
+    background: var(--orange-color);
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
+
+  .about-me p.hello-there {
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .about-me h3 {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+  }
+  
+  .about-me .jobs {
+    display: block;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 2rem;
+  
+  }
+
+  .about-me .jobs .network-sub h4,
+  .about-me .jobs .customer-sales h4,
+  .about-me .jobs .utility-cable h4,
+  .about-me .jobs .electrical-tech h4 {
+    padding-top: 0.87rem;
+  }
+
+  .about-me .jobs .network-sub,
+  .about-me .jobs .customer-sales,
+  .about-me .jobs .utility-cable,
+  .about-me .jobs .electrical-tech {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+
+  .about-me .jobs .network-sub p,
+  .about-me .jobs .customer-sales p,
+  .about-me .jobs .utility-cable p,
+  .about-me .jobs .electrical-tech p {
+    padding-bottom: 2rem;
+  }
+
+
+  .testimonials {
+    background-color: lightgreen;
+    width: 100%;
+    margin: 5rem 0 -1rem 0rem;
+    padding: 2rem 4rem;
+  }
+
+  .testimonials .testimony {
+    display: block;
+  }
+  
+  .testimonials .testimony .first-testimony {
+    width: 100%;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin: 3rem 0 6rem 0;
+    padding: 0.8rem;
+  }
+
+  .testimonials .testimony .second-testimony {
+    width: 100%;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin: 6rem 0;
+    padding: 0.8rem;
+  }
+
+  .testimonials .testimony .third-testimony {
+    width: 100%;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin: 6rem 4rem 1rem 0;
+    padding: 0.8rem;
+  }
+  
+  .testimonials .testimony .first-testimony h4,
+  .testimonials .testimony .second-testimony h4,
+  .testimonials .testimony .third-testimony h4 {
+    text-align: center;
+  }
+  
+  .testimonials .testimony .first-testimony p,
+  .testimonials .testimony .second-testimony p,
+  .testimonials .testimony .third-testimony p {
+    text-align: center;
+    line-height: 1.5rem;
+  }
+  
+  footer .footer-content {
+    display: block;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer .footer-content p.all-rights {
+    margin-bottom: 3rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 4rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+    color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+  
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 1rem 0 1rem;
+  }
+  
+  .split .profile-pics img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  
+  .split .profile-pics h1 {
+    margin-left: 0.3rem;
+    font-size: 1.4rem;
+    margin-top: -0.15rem;
+  }
+  
+  .split .profile-pics p {
+    margin-left: 0.3rem;
+    margin-top: -0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .split .access {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--orange-color);
+    margin: -7rem 2rem 0 2rem;
+  }
+  
+  .split .pic-pic img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -5rem;
+  }
+
+  .about-me {
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+  
+  .about-me h2 {
+    margin-left: 4rem;
+    font-size: 2rem;
+  }
+  
+  
+  .about-me .h-dash .dash {
+    width: 10rem;
+    margin-right: 3rem;
+  }
+  
+  .about-me p.hello-there {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .about-me h3 {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+  }
+  
+  .about-me .jobs {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0;
+  
+  }
+  
+  .about-me .jobs .network-sub,
+  .about-me .jobs .customer-sales {
+    width: 100%;
+  }
+  
+  .about-me .jobs .network-sub h4,
+  .about-me .jobs .customer-sales h4,
+  .about-me .jobs .utility-cable h4,
+  .about-me .jobs .electrical-tech h4 {
+    color: var(--dark-color);
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 0.68rem;
+    margin-top: 0.87rem;
+    text-align: center;
+  }
+  
+  .about-me .jobs .network-sub p,
+  .about-me .jobs .customer-sales p,
+  .about-me .jobs .utility-cable p,
+  .about-me .jobs .electrical-tech p {
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 0.81rem;
+    margin-left: 1.56rem;
+    margin-right: 1.56rem;
+    text-align: center;
+  }
+  
+  .about-me .jobs .utility-cable,
+  .about-me .jobs .electrical-tech {
+    width: 100%;
+  }
+
+  .testimonials {
+    width: 100%;
+    margin: 5rem 0 -1rem 0;
+  }
+  
+  .testimonials .testimony {
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  .testimonials .testimony .first-testimony,
+  .testimonials .testimony .second-testimony,
+  .testimonials .testimony .third-testimony {
+    width: 100%;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  footer .footer-content p.all-rights a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+  header.desktop-header {
+    padding: 3rem 1rem;
+  }
+
+  .split {
+    padding: 15rem 0 0 3rem;
+  }
+  
+  .split .profile-pics h1 {
+    margin-top: -0.15rem;
+  }
+  
+  .split .profile-pics p {
+    margin-top: -0.8rem;
+  }
+  
+  .split .access {
+    font-size: 3rem;
+  }
+  
+  .split .pic-pic img {
+    margin-top: -5rem;
+  }
+
+  .about-me {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .testimonials {
+    width: 100%;
+    margin: 5rem 0 -1rem 0;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  footer .footer-content p.all-rights a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

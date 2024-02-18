@@ -1,0 +1,911 @@
+:root {
+  --white-color: #f2f5f9;
+  --orange-color: #ff9c1a;
+  --red-color: #ec1b09;
+  --gray-color: #f2f7fc;
+  --dark-gray-color: #e1e8ef;
+  --dark-color: #000;
+  --light-gray-color: #ebf2fa;
+  --light-pale-peach: #ffebd1;
+  --ice-blue: #F8FBFB;
+
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-tertiary: "Pacifico", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--white-color);
+  margin: 0;
+}
+
+header.desktop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem 3rem 5rem;
+  position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white-color);
+  z-index: 10;
+  border-bottom: 2px solid #ff9c1a;
+}
+
+
+header.desktop-header .logo {
+  font-size: 1.8rem;
+  font-family: var(--ff-tertiary);
+}
+
+header.desktop-header .logo span {
+  color: var(--orange-color)
+}
+
+header.mobile-header {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav ul li {
+  padding: 0 3.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.contact-page {
+ padding-top: 10rem;
+  background-color: lightgreen;
+}
+
+.contact .h-dash {
+  display: flex;
+  gap: 2.12rem;
+}
+
+.contact h1 {
+  color: #0B0909;
+  font-family: var(--ff-secondary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 15rem;
+  margin-top: 1.78rem;
+}
+
+
+.contact .h-dash .dash {
+  height: 0.19rem;
+  width: 15.75rem;
+  background: var(--orange-color);
+  margin-right: 15.75rem;
+  margin-top: 3.48rem;
+}
+
+.contact-page .split {
+  display: flex;
+  gap: 20rem;
+  padding: 0 5rem;
+}
+
+.contact-page .split .personal-details {
+  width: 20rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.contact-page .split .personal-details .social-icon {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.contact-page .split .personal-details .social-icon div.facebook a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.contact-page .split .personal-details .details {
+  padding: 2rem 0 0 2rem;
+}
+
+.contact-page .split .personal-details .details .main-phone p.phone,
+.contact-page .split .personal-details .details .main-email p.email,
+.contact-page .split .personal-details .details .main-location p.location {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.contact-page .split .personal-details .details .main-phone p.phone::before {
+  content: url(Imgs/Vector-phone.svg);
+  position: absolute;
+  left: -2rem;
+}
+
+.contact-page .split .personal-details .details .main-email p.email::before {
+  content: url(Imgs/Vector-email.svg);
+  position: absolute;
+  left: -2rem;
+}
+
+.contact-page .split .personal-details .details .main-location p.location::before {
+  content: url(Imgs/Vector-location.svg);
+  position: absolute;
+  left: -2rem;
+}
+
+.contact-page .split .personal-details .details .main-phone p.phone-number,
+.contact-page .split .personal-details .details .main-email p.email-address,
+.contact-page .split .personal-details .details .main-location p.state {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-page .split .forms {
+  width: 45.57rem;
+  background: var(--ice-blue);
+  border-radius: 1.3rem;
+  margin-top: 2rem;
+  margin-left: 4.59rem;
+  margin-bottom: 2.3rem;
+}
+
+.contact-page .split .forms p {
+  padding-left: 2.4rem;
+  padding-top: 2.6rem;
+  margin-right: 4.75rem;
+  color: var(--dark-color);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact-page .split .forms p span {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4rem;
+  color: var(--dark-color);
+}
+
+.contact-page .split .forms form {
+  margin-left: 2.6rem;
+  margin-top: 2rem;
+}
+
+.contact-page .split .forms label {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  text-transform: capitalize;
+  display: block;
+}
+
+.contact-page .split .forms input,
+.contact-page .split .forms textarea {
+  border: none;
+  width: 36.18rem;
+  border-bottom: 0.1rem solid black;
+  background: var(--ice-blue);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.contact-page .split .forms button.submit-btn {
+  width: 5.5rem;
+  height: 2.2rem;
+  border-radius: 1.2rem;
+  border: 0.01rem solid #fd8a18;
+  font-size: 0.8rem;
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.contact-page .split .forms button.submit-btn:hover {
+  background: var(--orange-color);
+}
+
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+footer .footer-content p.all-rights a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content .developer-desktop {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .footer-content .developer-desktop img {
+  width: 7rem;
+  height: 7rem;
+}
+
+footer .footer-content p.mail a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content .developer-mail {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+    color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .contact-page {
+    margin-top: 8rem;
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: lightgreen;
+  }
+   
+  .contact .h-dash {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+   
+  .contact h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.8rem;
+  }
+  
+  
+  .contact .h-dash .dash {
+    width: 7rem;
+    margin-right: 0;
+  }
+  
+  .contact-page .split {
+    display: block;
+    padding: 0;
+  }
+   
+  .contact-page .split .personal-details {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  .contact-page .split .personal-details .social-icon {
+    gap: 4rem;
+    margin-left: 3rem;
+  }
+  
+  .contact-page .split .personal-details .social-icon div.facebook a img {
+    max-width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .contact-page .split .personal-details .details {
+    padding: 2rem 0 0 2rem;
+  }
+  
+  .contact-page .split .personal-details .details .main-phone p.phone,
+  .contact-page .split .personal-details .details .main-email p.email,
+  .contact-page .split .personal-details .details .main-location p.location {
+    font-size: 1rem;
+  }
+
+  .contact-page .split .forms {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .contact-page .split .forms p {
+    padding-left: 0.7rem;
+    padding-top: 1rem;
+    margin-right: 0;
+  }
+  
+  .contact-page .split .forms form {
+    margin-left: 0.7rem;
+  }
+  
+  .contact-page .split .forms input,
+  .contact-page .split .forms textarea {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  
+  .contact-page .split .forms button.submit-btn {
+    width: 5.5rem;
+    height: 2.2rem;
+    border-radius: 1.2rem;
+    border: 0.01rem solid #fd8a18;
+    font-size: 0.8rem;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+  }
+  
+  .contact-page .split .forms button.submit-btn:hover {
+    background: var(--orange-color);
+  }
+  
+  footer .footer-content {
+    display: block;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer .footer-content p.all-rights {
+    margin-bottom: 3rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+  color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .contact-page {
+    margin-top: 8rem;
+    padding: 3rem;
+    background-color: lightgreen;
+  }
+   
+  .contact .h-dash {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+   
+  .contact h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 1.8rem;
+  }
+  
+  
+  .contact .h-dash .dash {
+    width: 10rem;
+    margin-right: 0;
+  }
+  
+  .contact-page .split {
+    display: block;
+    padding: 0;
+  }
+   
+  .contact-page .split .personal-details {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  .contact-page .split .personal-details .social-icon {
+    gap: 4rem;
+    margin-left: 3rem;
+  }
+  
+  .contact-page .split .personal-details .social-icon div.facebook a img {
+    max-width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .contact-page .split .personal-details .details {
+    padding: 2rem 0 0 2rem;
+  }
+  
+  .contact-page .split .personal-details .details .main-phone p.phone,
+  .contact-page .split .personal-details .details .main-email p.email,
+  .contact-page .split .personal-details .details .main-location p.location {
+    font-size: 1rem;
+  }
+
+  .contact-page .split .forms {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .contact-page .split .forms p {
+    padding-left: 0.7rem;
+    padding-top: 1rem;
+    margin-right: 0;
+  }
+  
+  .contact-page .split .forms form {
+    margin-left: 0.7rem;
+  }
+  
+  .contact-page .split .forms input,
+  .contact-page .split .forms textarea {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  
+  .contact-page .split .forms button.submit-btn {
+    width: 5.5rem;
+    height: 2.2rem;
+    border-radius: 1.2rem;
+    border: 0.01rem solid #fd8a18;
+    font-size: 0.8rem;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+  }
+  
+  .contact-page .split .forms button.submit-btn:hover {
+    background: var(--orange-color);
+  }
+  
+  footer .footer-content {
+    display: block;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer .footer-content p.all-rights {
+    margin-bottom: 3rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 4rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+    color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+  
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .contact-page {
+    margin-top: 6rem;
+    padding-top: 3rem;
+  }
+   
+  .contact h1 {
+    font-size: 2rem;
+    margin-left: 10rem;
+    margin-bottom: 3rem;
+  }
+   
+   
+  .contact .h-dash .dash {
+    width: 100%;
+    margin-right: 10rem;
+  }
+   
+  .contact-page .split {
+    gap: 0;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+   
+  .contact-page .split .personal-details {
+    width: 100%;
+    padding: 0.5rem;
+  }
+   
+  .contact-page .split .personal-details .social-icon {
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1.6rem;
+  }
+   
+  .contact-page .split .forms {
+    width: 100%;
+    margin-left: 4.59rem;
+  }
+  
+  .contact-page .split .forms p {
+    padding-left: 0.7rem;
+    padding-top: 1.6rem;
+    margin-right: 0;
+  }
+   
+  .contact-page .split .forms form {
+    margin-left: 0.7rem;
+  }
+
+  .contact-page .split .forms input,
+  .contact-page .split .forms textarea {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  footer .footer-content p.all-rights a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+  header.desktop-header {
+    padding: 3rem 1rem;
+  }
+  
+  .contact-page .split {
+    gap: 5rem;
+  }
+  
+  .contact-page .split .personal-details {
+    width: 20rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .contact-page .split .personal-details .social-icon {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  .contact-page .split .forms input,
+  .contact-page .split .forms textarea {
+    font-size: 1rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

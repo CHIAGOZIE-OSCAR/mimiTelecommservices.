@@ -1,0 +1,762 @@
+:root {
+  --white-color: #f2f5f9;
+  --orange-color: #ff9c1a;
+  --red-color: #ec1b09;
+  --gray-color: #f2f7fc;
+  --dark-gray-color: #e1e8ef;
+  --dark-color: #000;
+  --light-gray-color: #ebf2fa;
+  --light-pale-peach: #ffebd1;
+
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-tertiary: "Pacifico", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--white-color);
+  margin: 0;
+}
+
+header.desktop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem 3rem 5rem;
+  position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white-color);
+  z-index: 10;
+  border-bottom: 2px solid #ff9c1a;
+}
+
+header.desktop-header .logo {
+  font-size: 1.8rem;
+  font-family: var(--ff-tertiary);
+}
+
+header.desktop-header .logo span {
+  color: var(--orange-color)
+}
+
+header.mobile-header {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav ul li {
+  padding: 0 3.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.resume-all {
+  margin-top: 7rem;
+  background-color: lightgreen;
+  padding: 1.2rem;
+}
+
+.resume-all .h-dash {
+  display: flex;
+  gap: 2.12rem;
+}
+
+.resume-all h2 {
+  color: #0B0909;
+  font-family: var(--ff-secondary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 15rem;
+  margin-top: 1.78rem;
+}
+
+
+.resume-all .h-dash .dash {
+  height: 0.19rem;
+  width: 15.75rem;
+  background: var(--orange-color);
+  margin-right: 15.75rem;
+  margin-top: 3.48rem;
+}
+
+.resume .edu {
+  margin-left: 10.75rem;
+  margin-right: 10.75rem;
+  margin-bottom: 3rem;
+}
+
+.resume .edu h3 {
+  font-size: 1.5rem;
+}
+
+.resume .edu .educational {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1rem;
+}
+
+.resume .prof-exp {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10.75rem;
+  margin-right: 10.75rem;
+}
+
+.resume .prof-exp .customer-service,
+.resume .prof-exp .skill-sets {
+  margin-right: 5rem;
+}
+
+.resume .prof-exp .customer-service h3,
+.resume .prof-exp .skill-sets h3,
+.resume .prof-exp .award-achive h3 {
+  font-size: 1.5rem;
+}
+
+.resume .prof-exp .skill-sets li {
+  padding-bottom: 0.6rem;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+footer .footer-content p.all-rights a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content .developer-desktop {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer .footer-content .developer-desktop img {
+  width: 7rem;
+  height: 7rem;
+}
+
+footer .footer-content p.mail a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer-content .developer-mail {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+    color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  .resume-all {
+    margin-top: 7rem;
+    background-color: lightgreen;
+    padding: 1.2rem;
+  }
+  
+  .resume-all .h-dash {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .resume-all h2 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  
+  
+  .resume-all .h-dash .dash {
+    width: 7rem;
+    margin-right: 0;
+  }
+  
+  .resume .edu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .resume .edu h3 {
+    font-size: 1.2rem;
+  }
+  
+  .resume .edu .educational {
+    display: block;
+    margin-top: 0;
+  }
+
+  .resume .educational .dash {
+    width: 100%;
+    height: 0.34rem;
+    background: #000;
+    margin-bottom: 2rem;
+  }
+  
+  .resume .prof-exp {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .resume .prof-exp .customer-service,
+  .resume .prof-exp .skill-sets {
+    margin-right: 0;
+  }
+  
+  .resume .prof-exp .customer-service h3,
+  .resume .prof-exp .skill-sets h3,
+  .resume .prof-exp .award-achive h3 {
+    font-size: 1.2rem;
+  }
+
+  footer .footer-content {
+    display: block;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer .footer-content p.all-rights {
+    margin-bottom: 3rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+  color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .resume-all .h-dash {
+    gap: 2rem;
+  }
+  
+  .resume-all h2 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  
+  
+  .resume-all .h-dash .dash {
+    width: 10rem;
+    margin-right: 0;
+  }
+  
+  .resume .edu {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .resume .edu h3 {
+    font-size: 1.2rem;
+  }
+  
+  .resume .edu .educational {
+    display: block;
+    margin-top: 0;
+  }
+
+  .resume .educational .dash {
+    width: 100%;
+    height: 0.34rem;
+    background: #000;
+    margin-bottom: 2rem;
+  }
+  
+  .resume .prof-exp {
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .resume .prof-exp .customer-service,
+  .resume .prof-exp .skill-sets {
+    margin-right: 0;
+  }
+  
+  .resume .prof-exp .customer-service h3,
+  .resume .prof-exp .skill-sets h3,
+  .resume .prof-exp .award-achive h3 {
+    font-size: 1.2rem;
+  }
+  
+  .resume .prof-exp .skill-sets li {
+    padding-bottom: 0.6rem;
+  }
+
+  footer .footer-content {
+    display: block;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer .footer-content p.all-rights {
+    margin-bottom: 3rem;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  header.desktop-header {
+    display: none;
+  }
+
+  header.mobile-header {
+    display: block; 
+    border-bottom: 2px solid #ff9c1a;
+  }
+
+  header.mobile-header .menu-icon {
+    margin-top: 0.7rem
+  }
+
+  header.mobile-header .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 4rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: var(--white-color);
+    z-index: 10;
+  }
+
+  header.mobile-header .logo {
+    font-family: var(--ff-tertiary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+  }
+
+  header.mobile-header .logo span {
+    color: var(--orange-color);
+  }
+
+  header.mobile-header .mobile-nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    transition: all 400ms ease;
+  }
+
+  header.mobile-header .mobile-nav-container.active {
+    left: 0;
+  }
+
+  header.mobile-header .mobile-nav-container .close-icon {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 400ms ease;
+  }
+  
+  header.mobile-header .mobile-nav-container.active .close-icon {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  header.mobile-header .mobile-nav-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header.mobile-header .mobile-nav-container ul li {
+    margin: 1.8rem 0;
+    text-align: center;
+  }
+
+  header.mobile-header .mobile-nav-container ul a {
+    color: var(--gray-color);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .resume-all h2 {
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  
+  
+  .resume-all .h-dash .dash {
+    width: 15rem;
+    margin-right: 0;
+  }
+  
+  .resume .edu {
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
+    margin-bottom: 3rem;
+  }
+  
+  .resume .edu h3 {
+    font-size: 1.2rem;
+  }
+  
+  .resume .edu .educational {
+    display: block;
+    margin-top: 0;
+  }
+
+  .resume .educational .dash {
+    width: 100%;
+    height: 0.34rem;
+    background: #000;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .resume .prof-exp {
+    display: block;
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
+  }
+  
+  .resume .prof-exp .customer-service,
+  .resume .prof-exp .skill-sets {
+    margin-right: 5rem;
+  }
+  
+  .resume .prof-exp .customer-service h3,
+  .resume .prof-exp .skill-sets h3,
+  .resume .prof-exp .award-achive h3 {
+    font-size: 1.5rem;
+  }
+  
+  .resume .prof-exp .skill-sets li {
+    padding-bottom: 0.6rem;
+  }
+
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  footer .footer-content p.all-rights a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1500px) {
+  header.desktop-header {
+    padding: 3rem 1rem;
+  }
+
+  .resume-all {
+    padding: 3rem 1.2rem 1.2rem 1.2rem;
+  }
+  
+  .resume .edu {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .resume .edu .educational {
+    gap: 1.5rem;
+  }
+  
+  .resume .prof-exp {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  footer .footer-content p.all-rights a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer .footer-content .developer-desktop {
+    display: none;
+  }
+  
+  footer .footer-content p.mail {
+    display: none;
+  }
+
+  footer .footer-content .developer-mail {
+    display: block;
+  }
+
+  footer .footer-content .developer-mail a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
